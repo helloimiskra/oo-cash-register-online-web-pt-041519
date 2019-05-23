@@ -4,7 +4,7 @@ class CashRegister
   def initialize(total = 0, discount = 20)
     self.total = total
     self.discount = discount
-    
+
   end
 
   def add_item(title = "title", price = 0.0, quantity = 1)
