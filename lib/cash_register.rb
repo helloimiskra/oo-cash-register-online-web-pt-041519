@@ -16,13 +16,9 @@ class CashRegister
   end
 
   def apply_discount
-    if discount.to_a.any?
-      return "There is no discount to apply."
-    else
       discount_percentage = @discount * 0.01
       @total = @total - (@total.to_f * discount_percentage)
       "After the discount, the total comes to $#{@total.to_i}."
-    end
   end
 
 end
