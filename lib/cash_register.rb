@@ -15,13 +15,11 @@ class CashRegister
     @price = price
     @quantity = quantity
     @total += @price * @quantity
-    @@items << self.add_item
-
 
   end
 
   def apply_discount
-    if self.discount == nil
+    if self.discount == ""
       "There is no discount to apply."
     else
       discount_percentage = @discount * 0.01
