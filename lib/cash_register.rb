@@ -15,7 +15,6 @@ class CashRegister
     @price = price
     @quantity = quantity
     @total += @price * @quantity
-    @@items << self.title
 
   end
 
@@ -30,9 +29,7 @@ class CashRegister
   end
 
   def items
-    self.add_items.collect do |item|
-      item.title
-    end
+    @@items << @title
   end
 
 end
