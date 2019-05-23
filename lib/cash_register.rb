@@ -29,6 +29,3 @@ class CashRegister
   end
 
 end
-my_cash_reg = CashRegister.new
-my_cash_reg.add_item
-an_cash_reg = CashRegister.new
