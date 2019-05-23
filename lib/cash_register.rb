@@ -19,7 +19,7 @@ class CashRegister
     discount_percentage = @discount * 0.01
     @total = @total - (@total.to_f * discount_percentage)
     print "After the discount, the tota comes to $#{@total.to_i}."
-    
+
   end
 
 end
