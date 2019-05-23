@@ -14,7 +14,7 @@ class CashRegister
   end
 
   def apply_discount
-    cash_register_with_discount = self.new
+    
     
 
   end
