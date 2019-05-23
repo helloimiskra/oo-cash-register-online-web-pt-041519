@@ -11,7 +11,7 @@ class CashRegister
 
   def add_item(title, price = 0.0, quantity = 1)
     @total += price * quantity
-    @items << title
+    @item = @item.concat(((title + " ") * quantity).split(" "))
   end
 
   def apply_discount
