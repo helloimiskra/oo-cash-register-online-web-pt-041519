@@ -30,7 +30,9 @@ class CashRegister
   end
 
   def items
-    @@items
+    self.add_items.collect do |item|
+      item.title
+    end
   end
 
 end
